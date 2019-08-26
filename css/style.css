@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem;
+}
+
+svg {
+  height: 60px;
+}
+
+.grid {
+  height: calc(100% - 83px);
+  display: grid;
+  grid-template-rows: 35% 65%;
+}
+@media screen and (min-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.item {
+  background-color: lightpink;
+}
+@media screen and (min-width: 700px) {
+  .item {
+    height: calc(100vh - 83px);
+  }
+}
+
+.sidebar {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  text-align: center;
+  border: 1px solid black;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.topics {
+  overflow-y: scroll;
+}
+
+.main {
+  border: 2px dotted black;
+  overflow-y: scroll;
+  padding: 1rem 2rem;
+}
+
+.sidebarElement {
+  height: 70px;
+  border-top: 1px solid black;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.sidebarElement:first-of-type {
+  border-top: none;
+}
+
+/*# sourceMappingURL=style.css.map */
