@@ -1,0 +1,1 @@
+A simple mockup of a technical-style document, created with CSS Grid and Flexbox, along with sass and svg images I created. 

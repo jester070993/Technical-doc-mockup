@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Technical Documentation Mockup</title>
 </head>
@@ -15,13 +16,13 @@
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 650 103.7" style="enable-background:new 0 0 813.1 103.7;" xml:space="preserve">
             <style type="text/css">
-                .st0{fill:#60BFBD;}
-                .st1{opacity:0.25;enable-background:new    ;}
-                .st2{opacity:0.1;enable-background:new    ;}
-                .st3{fill:#FFFFFF;}
-                .st4{fill:none;}
-                .st6{font-size:35px;}
-                .st8{font-size:39px;}
+                .st0{fill:#60BFBD; font-family: Verdana;}
+                .st1{opacity:0.25;enable-background:new    ; font-family: Verdana;}
+                .st2{opacity:0.1;enable-background:new    ; font-family: Verdana;}
+                .st3{fill:#FFFFFF; font-family: Verdana;}
+                .st4{fill:none; font-family: Verdana;}
+                .st6{font-size:35px; font-family: Verdana;}
+                .st8{font-size:39px; font-family: Verdana;}
             </style>
             <g id="icon-loremipsum">
                 <path id="paper" class="st0" d="M82.4,36.6v58.1c0,2.2-1.8,4-4,4H14.3c-2.2,0-4-1.8-4-4V10.6c0-2.2,1.8-4,4-4h38.1L82.4,36.6z"/>
@@ -39,38 +40,106 @@
     <div class="grid">
         
         <div class="item sidebar">
-            <div class="title"> 
-                Articles 
+                <div class="title"> 
+                Articles<i class="fas fa-chevron-down"></i>
             </div>
             <div class="topics">
-                    <div class="sidebarElement">  <a href="#histroy">History</a>  </div>
-                    <div class="sidebarElement"> <a href="#intro">Introduction</a>  </div>
-                    <div class="sidebarElement"> <a href="#started">Getting Started</a>  </div>
-                    <div class="sidebarElement"> <a href="#what">What you should know</a> </div>
-                    <div class="sidebarElement"> <a href="#how">How to use </a> </div>
-                    <div class="sidebarElement"> <a href="#when"> When to use </a></div>
-                    <div class="sidebarElement"> <a href="#beg">Beginner Topics</a>   </div>
-                    <div class="sidebarElement">  <a href="#adv">Advanced Topics </a></div>
-                    <div class="sidebarElement">  <a href="#pratice">Practice Exercises</a>  </div>
-                    <div class="sidebarElement"> <a href="#test">Practice Test</a>  </div>
-                    <div class="sidebarElement"> <a href="#reading">Futher Readings </a>  </div>
-                    <div class="sidebarElement">  <a href="#ref">Reference</a> </div>
+                    <div class="sidebarElement">  <a  class="jump"  href="#history">History<i class="fas fa-chevron-right"></i>                    </a>  </div>
+                    <div class="sidebarElement"> <a class="jump"  href="#intro">Introduction<i class="fas fa-chevron-right"></i>                    </a>  </div>
+                    <div class="sidebarElement"> <a class="jump"  href="#started">Getting Started<i class="fas fa-chevron-right"></i></a>  </div>
+                    <div class="sidebarElement"> <a class="jump"  href="#what">What you should know<i class="fas fa-chevron-right"></i></a> </div>
+                    <div class="sidebarElement"> <a class="jump"  href="#how">How to use<i class="fas fa-chevron-right"></i></a> </div>
+                    <div class="sidebarElement"> <a class="jump"  href="#when"> When to use <i class="fas fa-chevron-right"></i></a></div>
+                    <div class="sidebarElement"> <a  class="jump" href="#beg">Beginner Topics<i class="fas fa-chevron-right"></i></a>   </div>
+                    <div class="sidebarElement">  <a class="jump"  href="#adv">Advanced Topics<i class="fas fa-chevron-right"></i> </a></div>
+                    <div class="sidebarElement"> <a  class="jump" href="#reading">Futher Readings<i class="fas fa-chevron-right"></i></a>  </div>
+                    <div class="sidebarElement">  <a class="jump"  href="#ref">References<i class="fas fa-chevron-right"></i></a> </div>
             </div>
         </div>
 
         <div class=" item main">
-            <div class="mainElement" id="history"> <h1>History</h1> </div>
-            <div class="mainElement" id="intro">  <h1>Introduction </h1> </div>
-            <div class="mainElement" id="started">  <h1>Getting Started </h1> </div>
-            <div class="mainElement" id="what">  <h1>What you should know </h1></div>
-            <div class="mainElement" id="how">  <h1>How to use  </h1></div>
-            <div class="mainElement" id="when">  <h1>When to use </h1> </div>                    
-            <div class="mainElement" id="beg">  <h1>Beginner Topics  </h1> </div>
-            <div class="mainElement" id="adv">  <h1>Advanced Topics </h1> </div>
-            <div class="mainElement" id="practice">  <h1>Practice Exercises  </h1> </div>
-            <div class="mainElement" id="test">  <h1>Practice Test  </h1></div>
-            <div class="mainElement" id="reading">  <h1>Futher Readings  </h1> </div>  
-            <div class="mainElement" id="ref"> <h1>Reference  </h1> </div>
+            <span class="top"><a href="#history">Go to top</a></span>
+            <div class="mainElement" id="history">
+                <h1>History</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            </div>
+            <div class="mainElement" id="intro">
+                <h1>Introduction </h1> 
+                <p>Morbi sit amet auctor odio. Suspendisse interdum augue augue, in hendrerit nibh consequat quis. Nam aliquam odio et sapien pellentesque vestibulum. In blandit in risus eget tempus. Aenean aliquet dolor non ultrices tempor. Morbi fringilla lorem sed justo ultricies, et semper tortor pellentesque. Pellentesque et velit justo. Aenean at fringilla lacus, quis tincidunt est. Fusce non volutpat nisi, sit amet pellentesque risus.            </p>
+                <p>Etiam porta finibus pretium. Phasellus luctus tortor erat, quis tristique odio pellentesque vel. Donec ac rhoncus ipsum. In quis ligula sed mi consequat pellentesque non eu lorem.</p>
+            </div>
+            <div class="mainElement" id="started">  
+                <h1>Getting Started </h1>
+                <p>Curabitur nec dolor ornare, egestas metus in, porta nunc. Etiam mollis, libero in dignissim fermentum, sapien tortor vulputate nisi, non eleifend tellus eros et libero. Nam at purus vitae purus tincidunt pulvinar eu eu diam. Donec ornare turpis eu ante consectetur mollis. Phasellus a enim odio. Integer vel tristique velit. Ut suscipit purus nisi, nec tristique nulla vehicula at. Praesent neque mi, lobortis vel nisl vel, lobortis feugiat ligula. Cras imperdiet mauris leo, a euismod felis consequat et. Nunc purus ex, consequat eu velit ac, facilisis congue mauris. Phasellus vulputate elit id sem ultricies, eu congue ante rhoncus.</p>
+            </div>
+            <div class="mainElement" id="what">  
+                <h1>What you should know </h1>
+                <p>Aliquam erat volutpat. Donec vehicula faucibus mauris. Nulla sollicitudin convallis nulla, a finibus risus eleifend a. </p>
+                <ul>
+                    <li>In ut ipsum mattis, hendrerit mauris vel, malesuada nisi.</li>
+                    <li>Pellentesque vitae odio iaculis sapien suscipit maximus.</li>
+                    <li>Integer ut mi et nunc interdum porta. </li>
+                    <li>Vitae odio iaculis sapien suscipit, malesuada.</li>
+                </ul>
+                <ol>
+                    <li>Pellentesque vitae odio iaculis sapien suscipit maximus.</li>
+                    <li>Integer vulputate mauris vel ipsum consectetur consequat.</li>
+                    <li>Donec laoreet sem pharetra eros sagittis porttitor.</li>
+                </ol>
+            </div>
+            <div class="mainElement" id="how">  
+                <h1>How to use  </h1>
+
+                <code>Donec sodales nunc vitae luctus cursus. Nullam egestas ligula nec mattis consequat. Sed ornare pulvinar lorem ac suscipit. In laoreet diam sem, ac bibendum sapien tempus vel. In condimentum accumsan purus eget aliquet. Donec ultrices lacus tempor mi laoreet, at aliquet mauris dignissim. Duis et pellentesque quam.</code>
+                <p>Integer magna ipsum, tempus et libero a, sollicitudin rutrum libero. </p>
+            
+            </div>
+            <div class="mainElement" id="when"> 
+                 <h1>When to use </h1>
+                 <ul>
+                    <li> Nullam ante enim, ultricies quis massa eu, pharetra feugiat libero </li>
+                        <li>Fusce id pulvinar nulla
+                          <ul>
+                            <li> Mauris pharetra condimentum venenatis</li>
+                            <li>Aliquam nec leo et velit maximus pulvinar</li>
+                          </ul>
+                        </li>
+                    <li>Sem pharetra eros sagittis</li>
+                </ul>
+                      
+                
+                </div>                    
+            <div class="mainElement" id="beg"> 
+                 <h1>Beginner Topics  </h1> 
+                 <p>Integer magna ipsum, tempus et libero a, sollicitudin rutrum libero. Sed rutrum diam vel sagittis elementum. Maecenas rhoncus erat id augue semper pharetra quis ut eros. Vivamus varius eros a magna mattis blandit. </p>
+                <h5>feugiat libero</h5>
+                <p>Vestibulum consectetur arcu ac velit mattis, id vulputate turpis cursus. Nullam accumsan ultricies leo, nec congue nunc facilisis eget. Phasellus arcu justo, elementum semper ligula non, eleifend faucibus nisi. Mauris id facilisis nulla. Etiam id egestas metus. Praesent dui elit, mollis finibus sem pellentesque, dignissim volutpat mi.</p>
+               <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis in sapien lobortis, pharetra velit quis, ultricies tellus. Nullam ante enim, ultricies quis massa eu, pharetra feugiat libero. Fusce id pulvinar nulla. Mauris pharetra condimentum venenatis. Aliquam nec leo et velit maximus pulvinar.</p>
+            </div>
+            <div class="mainElement" id="adv"> 
+                 <h1>Advanced Topics </h1>
+                 <p>Donec eget lacus nec tellus ultricies egestas vitae vel lacus. Pellentesque sollicitudin eros vitae blandit malesuada. Curabitur vestibulum egestas urna sed placerat. </p>
+                <ol>
+                    <li>Proin felis lacus</li>
+                    <li>, dictum vitae massa ut</li>
+                    <li>interdum mollis dui</li>
+                </ol>
+            </div>
+            <div class="mainElement" id="reading"> 
+                 <h1>Futher Readings  </h1>
+                 <h5>More info on Lorum Ipsum can be found below</h5>
+                 <ul>
+                     <li><a href="https://loremipsum.io/">Resource 1</a></li>
+                     <li><a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Resource 2</a></li>
+                     <li><a href="http://generator.lorem-ipsum.info/">Resource 3</a></li>
+                 </ul>
+                <p>Curabitur vestibulum egestas urna sed placerat.</p>
+                </div>  
+            <div class="mainElement" id="ref">
+                 <h1>References</h1>
+                <p>All the documentation in this page is taken from <a href="https://www.lipsum.com/">Lipsum</a> </p>
+                </div>
         </div>
     </div>
 </body>

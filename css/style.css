@@ -5,6 +5,7 @@
 body {
   margin: 0;
   height: 100%;
+  font-family: "Hepta Slab", serif;
 }
 
 html {
@@ -15,10 +16,12 @@ nav {
   display: flex;
   justify-content: center;
   padding: 0.7rem;
+  background-image: url("https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661");
 }
 
 svg {
   height: 60px;
+  background: linear-gradient(90deg, #dfdfdf 0%, white 100%);
 }
 
 .grid {
@@ -26,32 +29,32 @@ svg {
   display: grid;
   grid-template-rows: 35% 65%;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 780px) {
   .grid {
     grid-template-columns: 1fr 3fr;
   }
 }
 
 .item {
-  background-color: lightpink;
+  background-image: url("https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661");
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 780px) {
   .item {
     height: calc(100vh - 83px);
   }
 }
 
 .sidebar {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
+  font-weight: 900;
 }
 
 .title {
   font-size: 1.3rem;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #1f4d4c;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -61,20 +64,86 @@ svg {
 }
 
 .main {
-  border: 2px dotted black;
   overflow-y: scroll;
   padding: 1rem 2rem;
+  position: relative;
+  padding-top: 0.8rem;
+}
+
+.top {
+  position: fixed;
+  right: 30px;
+  bottom: 5px;
+  background-color: white;
+  font-size: 0.6rem;
+}
+.top a {
+  color: black;
+}
+
+h5 {
+  margin: 0;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ol, ul {
+  font-weight: bold;
+}
+
+i {
+  padding-left: 0.3rem;
 }
 
 .sidebarElement {
-  height: 70px;
-  border-top: 1px solid black;
+  height: 60px;
+  border-top: 1px solid #1f4d4c;
   padding-left: 1rem;
   display: flex;
   align-items: center;
+  font-size: 0.8rem;
 }
 .sidebarElement:first-of-type {
   border-top: none;
+}
+.sidebarElement:last-of-type {
+  border-bottom: 1px solid #1f4d4c;
+}
+.sidebarElement > a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 780px) {
+  .sidebarElement {
+    font-size: 1rem;
+  }
+}
+
+.jump:hover i {
+  transform: translateX(35px);
+}
+
+i {
+  transition: all 0.3s ease-out;
+  color: #44a8a6;
+}
+
+h1 {
+  margin: 0.4rem 0;
+  text-decoration: underline;
+  font-style: italic;
+  color: #26605e;
+}
+h1 ~ p {
+  margin: 0.4rem 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+code {
+  background-color: #dff2f2;
 }
 
 /*# sourceMappingURL=style.css.map */
